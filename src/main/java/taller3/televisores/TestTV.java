@@ -65,8 +65,6 @@ class TV {
         this.estado = estado;        
     }
     
-    //Metodos get y set de cada atributo
-    //Tendrá los métodos set y get para los atributos marca, canal, precio, volumen y control.
 
     void setMarca(Marca marca){
         this.marca = marca;
@@ -196,7 +194,7 @@ class Control {
     
 
     //------------------------------
-    void enlazar(Tv tv) {
+    void enlazar(TV tv) {
         this.tv = tv;
         tv.setControl(this);
     }
