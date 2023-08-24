@@ -44,7 +44,7 @@ class Marca {
         return this.nombre;
     }
 
-    void setNombre(String nombre){
+    void setNombre(String nombre){  
         this.nombre = nombre;
     }
 }
@@ -105,7 +105,7 @@ class TV {
     }
 
     //------------------------------
-    int setNumTv(int num){
+    void setNumTv(int num){
         TV.numTV = num;
     }
 
