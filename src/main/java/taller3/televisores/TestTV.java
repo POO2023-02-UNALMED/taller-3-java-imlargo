@@ -32,7 +32,6 @@ public class TestTV {
 
 //------------------------
 //Mi Codigo:
-
 class Marca {
 
     String nombre;
@@ -126,7 +125,7 @@ class TV {
         this.estado = false;
     }
     boolean getEstado() {
-        return this.estado
+        return this.estado;
     }
     //------------------------------
 
@@ -134,13 +133,13 @@ class TV {
     //Canal
     void canalUp(){
         if(this.canal < 120 && this.estado) {
-            this.canal += 1
+            this.canal += 1;
         }
     }
 
     void canalDown(){
         if(this.canal > 1 && this.estado) {
-            this.canal -= 1
+            this.canal -= 1;
         }
         
     }
@@ -148,13 +147,13 @@ class TV {
     //Volumen
     void volumeUp(){
         if(this.volumen < 7 && this.estado) {
-            this.volumen += 1
+            this.volumen += 1;
         }    
     }
 
     void volumeDown(){
         if(this.volumen > 0 && this.estado) {
-            this.volumen -= 1
+            this.volumen -= 1;
         }
     }
     //------------------------------
@@ -198,7 +197,7 @@ class Control {
 
     //------------------------------
     void enlazar(Tv tv) {
-        this.tv = tv
+        this.tv = tv;
         tv.setControl(this);
     }
     //------------------------------
