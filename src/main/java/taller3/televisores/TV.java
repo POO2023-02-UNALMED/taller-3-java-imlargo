@@ -56,11 +56,11 @@ public class TV {
     }
 
     // ------------------------------
-    public void setNumTv(int num) {
+    public static void setNumTV(int num) {
         TV.numTV = num;
     }
 
-    public int getNumTv() {
+    public static int getNumTV() {
         return TV.numTV;
     }
     // ------------------------------
@@ -95,13 +95,13 @@ public class TV {
     }
 
     // Volumen
-    public void volumeUp() {
+    public void volumenUp() {
         if (this.volumen < 7 && this.estado) {
             this.volumen += 1;
         }
     }
 
-    public void volumeDown() {
+    public void volumenDown() {
         if (this.volumen > 0 && this.estado) {
             this.volumen -= 1;
         }

@@ -23,11 +23,11 @@ public class Control {
 
     // ......
     public void volumenUp() {
-        this.tv.volumeUp();
+        this.tv.volumenUp();
     }
 
     public void volumenDown() {
-        this.tv.volumeDown();
+        this.tv.volumenDown();
     }
 
     // ......
