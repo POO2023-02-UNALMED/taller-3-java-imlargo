@@ -21,8 +21,9 @@ public class TV {
     }
 
     public void setCanal(int canal) {
-        System.out.println("Canal before: " + this.canal + " After: " + canal);
-        this.canal = canal;
+        if ((canal < 120 && canal > 0) && this.estado == true) {
+            this.canal = canal;
+        }
     }
 
     public void setPrecio(int precio) {
@@ -84,13 +85,13 @@ public class TV {
     // ------------------------------
     // Canal
     public void canalUp() {
-        if (this.canal < 120 && this.estado) {
+        if (this.canal < 120 && this.estado == true) {
             this.canal += 1;
         }
     }
 
     public void canalDown() {
-        if (this.canal > 1 && this.estado) {
+        if (this.canal > 1 && this.estado == true) {
             this.canal -= 1;
         }
 
@@ -98,13 +99,13 @@ public class TV {
 
     // Volumen
     public void volumenUp() {
-        if (this.volumen < 7 && this.estado) {
+        if (this.volumen < 7 && this.estado == true) {
             this.volumen += 1;
         }
     }
 
     public void volumenDown() {
-        if (this.volumen > 0 && this.estado) {
+        if (this.volumen > 0 && this.estado == true) {
             this.volumen -= 1;
         }
     }
