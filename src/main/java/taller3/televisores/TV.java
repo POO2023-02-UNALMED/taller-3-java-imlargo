@@ -21,6 +21,7 @@ public class TV {
     }
 
     public void setCanal(int canal) {
+        System.out.println("Canal before: " + this.canal + " After: " + canal);
         this.canal = canal;
     }
 
