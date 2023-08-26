@@ -31,7 +31,9 @@ public class TV {
     }
 
     public void setVolumen(int volumen) {
-        this.volumen = volumen;
+        if ((volumen < 8 && volumen >= 0) && this.estado == true) {
+            this.volumen = volumen;
+        }
     }
 
     public void setControl(Control control) {
@@ -85,13 +87,13 @@ public class TV {
     // ------------------------------
     // Canal
     public void canalUp() {
-        if (this.canal < 120 && this.estado == true) {
+        if (this.canal < 121 && this.estado == true) {
             this.canal += 1;
         }
     }
 
     public void canalDown() {
-        if (this.canal > 1 && this.estado == true) {
+        if (this.canal > 0 && this.estado == true) {
             this.canal -= 1;
         }
 
@@ -99,13 +101,13 @@ public class TV {
 
     // Volumen
     public void volumenUp() {
-        if (this.volumen < 7 && this.estado == true) {
+        if (this.volumen <= 7 && this.estado == true) {
             this.volumen += 1;
         }
     }
 
     public void volumenDown() {
-        if (this.volumen > 0 && this.estado == true) {
+        if (this.volumen >= 0 && this.estado == true) {
             this.volumen -= 1;
         }
     }
